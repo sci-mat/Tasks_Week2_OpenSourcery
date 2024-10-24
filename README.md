@@ -1,4 +1,4 @@
-# Week 2 Tasks for Batch 2024
+# Week 2 Tasks for all batches
 <hr>
 
 ### 1. Clone the code from the repository into your local device using command: 
