@@ -21,3 +21,26 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 
 */
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+    int num;
+    cout << "enter a number : ";
+    cin >> num;
+    int originalnum = num;
+    int reversed = 0;
+    int i = 0;
+    while(num!=0){
+        int digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num = num / 10;
+        i++;
+    }
+    cout <<"reversed number is " << reversed << endl;
+    if(reversed==originalnum){
+        cout << "True";
+    }else{
+        cout << "False";
+    }
+}
