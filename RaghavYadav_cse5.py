@@ -3,6 +3,5 @@ def is_palindrome(x):
     rev_num = num[::-1]
     return num == rev_num
 
-
-print(is_palindrome(121)) # True
-print(is_palindrome(10)) # False
+result = is_palindrome(input("Enter a number: "))
+print(result)
