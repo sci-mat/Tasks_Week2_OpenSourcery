@@ -2,7 +2,7 @@
 
 Solve the below mentioned task and push the code to your branch, 
 
-Do Not the push the code to your branch
+Do Not the push the code to the main branch
 
 You can change the file and complete the task in any language
 
