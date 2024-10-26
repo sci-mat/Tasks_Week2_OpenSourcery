@@ -21,3 +21,22 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 
 */
+
+#include <stdio.h>
+int main(){
+    int num;
+    printf("Enter a number");
+    scanf("%d", &num);
+
+    int numRev = 0;
+    for (int i = num; i > 0; i /= 10){
+        numRev = numRev * 10 + (i % 10);
+    }
+    if(numRev == num){
+        printf("%d is a palindrome", num);
+    }
+    else{
+        printf("%d is not a palindrome", num);
+    }
+    return 0;
+}
