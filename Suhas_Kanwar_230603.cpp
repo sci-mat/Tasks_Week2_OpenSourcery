@@ -21,3 +21,25 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 
 */
+#include <iostream>
+using namespace std;
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        int orginalNum = x;
+        int long long reverseNum = 0;
+        while(orginalNum > 0)
+        {
+            int digit = orginalNum%10;
+            reverseNum = 10*reverseNum + digit;
+            orginalNum = orginalNum/10;
+        }
+        return reverseNum == x;
+    }
+};
+int main()
+{
+    Solution prob;
+    cout<<prob.isPalindrome(121);
+    cout<<prob.isPalindrome(10);
+}
