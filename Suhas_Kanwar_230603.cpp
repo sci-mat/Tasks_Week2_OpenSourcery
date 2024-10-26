@@ -40,6 +40,6 @@ public:
 int main()
 {
     Solution prob;
-    cout<<prob.isPalindrome(121);
-    cout<<prob.isPalindrome(10);
+    cout<<prob.isPalindrome(121)<<endl;
+    cout<<prob.isPalindrome(10)<<endl;
 }
